@@ -21,3 +21,7 @@ task :server do
   # -b runs in the background (include it or binding.pry won't work)
   exec "bundle exec rerun -b 'rackup config.ru'"
 end
+task :generate_erd do
+  # Generate the ERD
+  system('rails-erd')
+end

@@ -23,7 +23,8 @@ gem "sqlite3", "~> 1.4"
 # Require all files in a folder
 # https://github.com/jarmo/require_all
 gem "require_all"
-
+#Generates an ERD diagram
+gem 'rails-erd'
 # These gems will only be used when we are running the application locally
 group :development do
   # Used to generate seed data
@@ -33,7 +34,7 @@ group :development do
   # Auto-reload the server when files are changed
   # https://github.com/alexch/rerun
   gem "rerun"
-
+  
   gem "pry"
 end
 
